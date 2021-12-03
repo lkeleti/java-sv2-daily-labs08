@@ -41,7 +41,7 @@ public class NumberSequence {
     public List<Integer> closeToAverage(int value){
         List<Integer> result = new ArrayList<>();
         for (int number: numbers) {
-            if (Math.abs(number-average) < value){
+            if (Math.abs(number-average) <= value){
                 result.add(number);
             }
         }
